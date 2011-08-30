@@ -1,0 +1,11 @@
+_index:
+    pattern:  /
+    defaults: { _controller: IconsDefaultBundle:Page:index }
+
+_info:
+    pattern:  /info
+    defaults: { _controller: IconsDefaultBundle:Page:info }
+
+_assetic:
+    resource: .
+    type:     assetic

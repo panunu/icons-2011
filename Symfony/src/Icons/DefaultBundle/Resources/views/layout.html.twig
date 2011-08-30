@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="{{ asset('bundles/icons/css/global.css') }}" type="text/css" media="all" />
+        <title>{% block title %}Icons - Demo and art festival - Helsinki 2011{% endblock %}</title>
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">Icons 2011</div>
+
+            {% block content_header %}
+                <ul id="menu">
+                    {% block content_header_more %}
+                        <li><a href="{{ path('_index') }}">Front page</a></li>
+                        <li><a href="{{ path('_info') }}">Info</a></li>
+                    {% endblock %}
+                </ul>
+            {% endblock %}
+
+            <div class="content">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </body>
+</html>
