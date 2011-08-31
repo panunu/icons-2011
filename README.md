@@ -1,12 +1,12 @@
 Icons 2011 - Demo and Art Festival
 ==================================
 
-The site is build on:
+The site is built on:
 
 - Symfony2
 - Twig
 - MySQL
-- (Doctrine).
+- Doctrine.
 
 
 Bundles
