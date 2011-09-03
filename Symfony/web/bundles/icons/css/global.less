@@ -1,0 +1,135 @@
+.diagonal(@rotation: -45deg)
+{
+    -webkit-transform: rotate(@rotation); 
+    -moz-transform:    rotate(@rotation);	
+}
+
+.round(@radius: 5px)
+{
+    border-radius:         @radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius:    @radius;
+}
+
+body
+{
+    background-color: #000;
+    
+    text-align:     center;
+    
+    font-family:    "Arial";
+    font-size:      12px;
+    font-weight:    normal;
+    letter-spacing: 1px;
+    color:          #fff;
+}
+
+section#wrapper
+{
+    width:        1024px;
+    margin-left:  auto;
+    margin-right: auto;
+    margin-top:   150px;
+}
+
+header#logo
+{
+    float:        left;
+    margin-right: 50px;
+
+    font-size:      64px;
+    font-weight:    bold;
+    line-height:    24px;
+    text-transform: uppercase;
+
+    .sub
+    {
+        font-size: 14px;
+    }
+}
+
+nav#main
+{
+    float:      left;
+    margin-top: 12px;
+
+    text-transform: uppercase;
+
+    ul
+    {
+        list-style: none;
+
+        li
+        {
+            float: left;
+
+            width: 50px;
+
+            list-style: none;
+
+            .diagonal;
+
+            a
+            {
+                font-size:       24px;
+                font-weight:     bold;
+                text-decoration: none;
+                color:           white;
+            }
+        }
+    }
+}
+
+section#content
+{
+    float: left;
+    clear: both;
+    
+    margin-top: 50px;
+}
+
+aside#promo
+{
+    position: absolute;
+    right:    0px;
+    top:      0px;
+
+    overflow: hidden;
+
+    article#circle
+    {
+        margin-top:   -50px;
+        margin-right: -50px;
+
+        width:  250px;
+        height: 250px;
+
+        text-align: center;
+
+        background-color: #fff;
+
+        overflow: hidden;
+
+        .round(150px);
+        .diagonal(-10deg);
+
+        time
+        {
+            position: relative;
+            top:      75px;
+            right:    15px;
+
+            font-size:   32px;
+            font-weight: bold;
+            color:       #eee;
+            text-shadow: -1px -1px 0px #ccc;
+            line-height: 36px;
+
+            overflow: hidden;
+
+            .day   { font-size: 64px; }
+            .month { font-size: 26px; }
+            .year  { font-size: 46px; }
+        }
+    }
+}
