@@ -1,13 +1,5 @@
-Symfony/app/cache/*
-Symfony/app/logs/*
 Symfony/bin/
 Symfony/deps
 Symfony/deps.lock
-Symfony/vendor
+Symfony/vendor/
 
-
-
-.DS_Store?
-ehthumbs.db
-Icon?
-Thumbs.db
