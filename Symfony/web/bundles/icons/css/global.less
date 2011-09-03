@@ -1,57 +1,55 @@
-.diagonal(@rotation: -45deg)
-{
-    -webkit-transform: rotate(@rotation); 
-    -moz-transform:    rotate(@rotation);	
-}
-
-.round(@radius: 5px)
-{
-    border-radius:         @radius;
-    -webkit-border-radius: @radius;
-    -moz-border-radius:    @radius;
-}
+@primary:   white;
+@secondary: #333;
+@highlight: lightgreen;
 
 body
 {
-    background-color: #000;
+    background-color:  #000;
+    background-image:  url('/bundles/icons/images/background.gif');
+    background-repeat: repeat-x;
     
-    text-align:     center;
-    
-    font-family:    "Arial";
-    font-size:      12px;
+    font-family:    "Josefin Sans", "Arial";
+    font-size:      18px;
     font-weight:    normal;
+    color:          @primary;
+    text-align:     center;
     letter-spacing: 1px;
-    color:          #fff;
+}
+
+a
+{
+    color: @highlight;
+
+    cursor: pointer;
 }
 
 section#wrapper
 {
-    width:        1024px;
+    width:        85%;
     margin-left:  auto;
     margin-right: auto;
-    margin-top:   150px;
+    margin-top:   250px;
 }
 
 header#logo
 {
-    float:        left;
-    margin-right: 50px;
+    float:       left;
+    margin-left: -5px;
 
-    font-size:      64px;
+    font-size:      120px;
     font-weight:    bold;
-    line-height:    24px;
     text-transform: uppercase;
+    line-height:    38px;
 
-    .sub
-    {
-        font-size: 14px;
-    }
+    cursor: default;
+
+    .sub { font-size: 28px; }
 }
 
 nav#main
 {
-    float:      left;
-    margin-top: 12px;
+    float:       left;
+    margin-top:  5px;
 
     text-transform: uppercase;
 
@@ -62,19 +60,24 @@ nav#main
         li
         {
             float: left;
-
-            width: 50px;
+            width: 90px;
 
             list-style: none;
 
-            .diagonal;
+            .rotated;
 
             a
             {
+                padding: 25px;
+
                 font-size:       24px;
                 font-weight:     bold;
                 text-decoration: none;
-                color:           white;
+                color:           @primary;
+
+                background-color: @secondary;
+
+                &:hover { color: @highlight; }
             }
         }
     }
@@ -82,10 +85,56 @@ nav#main
 
 section#content
 {
-    float: left;
-    clear: both;
-    
+    float:      left;
+    clear:      both;
     margin-top: 50px;
+
+    text-align: justify;
+
+    article
+    {
+        vertical-align: top;
+
+        margin-right: -5%;
+
+        h1 
+        {
+            float:         left;
+            width:         100%;
+            margin-bottom: 10px;
+            padding:       0px;
+
+            font-size:      36px;
+            font-weight:    bold;
+            text-transform: uppercase;
+            color:          @highlight;
+
+            cursor: default;
+        }
+
+        p
+        {
+            float: left;
+            clear: none;
+
+            width:        30%;
+            margin-right: 3%;
+        }.double { width: 63%; }.triple { width: 97%; }
+
+    }
+}
+
+footer
+{
+    float:         left;
+    clear:         both;
+    width:         100%;
+    margin-top:    50px;
+    margin-bottom: 50px;
+    padding:       5px;
+
+    text-align: right;
+    color: @secondary;
 }
 
 aside#promo
@@ -93,43 +142,59 @@ aside#promo
     position: absolute;
     right:    0px;
     top:      0px;
-
     overflow: hidden;
+
+    cursor: default;
 
     article#circle
     {
+        width:        250px;
+        height:       250px;
         margin-top:   -50px;
         margin-right: -50px;
 
-        width:  250px;
-        height: 250px;
-
         text-align: center;
 
-        background-color: #fff;
-
-        overflow: hidden;
+        background-color: @highlight;
 
         .round(150px);
-        .diagonal(-10deg);
+        .rotated(-10deg);
+
+        &:hover
+        {
+            background-color: white;
+
+            time { text-shadow: -1px -1px 0px green; }
+        }
 
         time
         {
             position: relative;
-            top:      75px;
-            right:    15px;
+            top:      85px;
+            right:    10px;
 
             font-size:   32px;
             font-weight: bold;
-            color:       #eee;
-            text-shadow: -1px -1px 0px #ccc;
+            color:       #white;
+            text-shadow: -1px -1px 0px green;
             line-height: 36px;
-
-            overflow: hidden;
 
             .day   { font-size: 64px; }
             .month { font-size: 26px; }
             .year  { font-size: 46px; }
         }
     }
+}
+
+.rotated(@rotation: -30deg)
+{
+    -webkit-transform: rotate(@rotation); 
+    -moz-transform:    rotate(@rotation);	
+}
+
+.round(@radius: 5px)
+{
+    border-radius:         @radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius:    @radius;
 }

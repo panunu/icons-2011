@@ -3,3 +3,4 @@ Symfony/deps
 Symfony/deps.lock
 Symfony/vendor/
 
+*.psd
