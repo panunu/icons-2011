@@ -1,6 +1,5 @@
-Symfony/bin/
-Symfony/deps
-Symfony/deps.lock
+Symfony/app/cache
+Symfony/app/logs
 Symfony/vendor/
 
 *.psd
