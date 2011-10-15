@@ -9,21 +9,8 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 class PageController extends Controller
 {
-    /**
-     * @Route("/", name="_index")
-     * @Template()
-     */
     public function indexAction()
     {
-        return array();
-    }
-
-    /**
-     * @Route("/info", name="_info")
-     * @Template()
-     */
-    public function infoAction()
-    {
-        return array();
+        return $this->render('IconsDefaultBundle:Page:index.html.twig');
     }
 }
