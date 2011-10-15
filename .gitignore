@@ -1,5 +1,5 @@
-Symfony/app/cache
-Symfony/app/logs
-Symfony/vendor/
+app/cache
+app/logs
+vendor/
 
 *.psd
