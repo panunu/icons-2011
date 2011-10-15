@@ -60,7 +60,7 @@ nav#main
         li
         {
             float: left;
-            width: 90px;
+            width: 100px;
 
             list-style: none;
 
@@ -97,14 +97,14 @@ section#content
 
         margin-right: -5%;
 
-        h1 
+        h1, h2
         {
             float:         left;
             width:         100%;
             margin-bottom: 10px;
             padding:       0px;
 
-            font-size:      36px;
+            font-size:      48px;
             font-weight:    bold;
             text-transform: uppercase;
             color:          @highlight;
@@ -112,16 +112,38 @@ section#content
             cursor: default;
         }
 
-        p
+        h2 { font-size: 28px; margin-top: 60px; }
+        h3 { font-size: 20px; text-transform: uppercase; color: @highlight; }
+
+        article
         {
             float: left;
             clear: none;
 
             width:        30%;
             margin-right: 3%;
-        }.double { width: 63%; }.triple { width: 97%; }
 
+            span.highlight
+            {
+                color: @highlight;
+            }
+
+            p  { margin-top:    0px; }
+            li { margin-bottom: 5px; }
+            section { border: 5px solid @secondary; padding:15px; }
+            td, th { vertical-align: top }         
+
+        }.double { width: 63%; }.triple { width: 97%; }
     }
+}
+
+hr
+{
+    width: 100%;
+    float: left;
+    clear: both;
+
+    border: none;
 }
 
 footer
@@ -197,4 +219,9 @@ aside#promo
     border-radius:         @radius;
     -webkit-border-radius: @radius;
     -moz-border-radius:    @radius;
+}
+
+.google.map
+{
+    border: 5px solid @secondary;
 }
