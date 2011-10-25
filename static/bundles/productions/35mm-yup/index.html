@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<!--
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *                 I want to WebGL                     *
+ *   A WebGL demo engine by Segrel/Accesion^Primitive  *
+ *   Licenced under beerware, also greetings are nice  *
+ *                                                     *
+ *   Thanks to iq for ShaderToy!                       *
+ *                                                     *
+ *   Uses some code from Mozilla Developer Network     *
+ *   Partly Google's WebGL init, see webgl-utils.js    *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+-->
+  
+<html>
+	<head>
+		<title>35mm - Icons 2012 invitation by Youth Uprising</title>
+		<link rel="stylesheet" type="text/css" href="pmt.css" /> 
+		<link href="http://fonts.googleapis.com/css?family=Josefin+Sans:300,700" rel="stylesheet" type="text/css" media="all">
+
+		<script language="javascript" src="js/glmatrix.js"></script>
+		<script language="javascript" src="js/webgl-utils.js"></script>
+
+		<script language="javascript" src="js/config.js"></script>
+		<script language="javascript" src="js/textures.js"></script>
+		<script language="javascript" src="js/engine.js"></script>
+		<script language="javascript" src="js/audio.js"></script>
+		<script language="javascript" src="js/shaders.js"></script>
+		<script language="javascript" src="js/demo.js"></script>
+
+		<script language="javascript" src="js/debug.js"></script>
+	</head>
+	
+	<body onload="engineStart();">
+
+		<div id="debug"></div>
+
+		<canvas id="webglcanvas" class="canvas"></canvas>
+
+		<center>
+		<div id="header">
+			<div id="demotitle" class="title"></div><br /><br />
+			<script language="javascript">
+				document.getElementById("demotitle").innerHTML = demoTitle;
+			</script>
+			<a id="playbutton" class="hidden" href="#" onClick="demoStart()">Start demo</a> or watch from <a href="http://www.youtube.com/watch?v=wa3-LIG-ZwM">Youtube</a>
+			<div id="status">Load/Init not started...</div>
+			<div id="notes" class="warning"></div>
+			<audio id="audio" ondurationchange="audioDurated();" onprogress="audioLoading();">
+				<source src="music/35mm.ogg" type="audio/ogg" />
+				ERROR: Your browser does NOT support HTML5. Please upgrade your browser or alternatively check the invitation from <a href="http://www.youtube.com/watch?v=wa3-LIG-ZwM">Youtube</a>.</audio>
+			<br /><br /><br />
+			For best viewing experience, switch your browser to fullscreen.<br /><br />
+			<div id="footer" class="end">
+			<img src="img/background.gif"/>
+			</div>
+		</div>
+		</center>
+		</body>
+		<footer></footer>
+</html>

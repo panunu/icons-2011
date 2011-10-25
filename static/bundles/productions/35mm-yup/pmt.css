@@ -1,0 +1,53 @@
+
+body {
+	background-color: #000000;
+	color: #ffffff;
+	margin:0px;
+	overflow:hidden;
+	font-family: "arial";
+    font-family:    "Josefin Sans", "Arial";
+    font-size:      18px;
+    font-weight:    normal;
+	letter-spacing: 1px;
+
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #666;
+}
+
+.canvas {
+	border: none;
+	display: none;
+	cursor: none;
+}
+
+.title {
+	font-size: 50px;
+}
+
+.hidden {
+	display: none;
+}
+
+.end {
+    background-color:  #000;
+    background-image:  url('../images/background.gif');
+    background-repeat: repeat-x;
+
+    font-family:    "Josefin Sans", "Arial";
+    font-size:      18px;
+    font-weight:    normal;
+    color:          @primary;
+    text-align:     center;
+    letter-spacing: 1px;
+}
+
+.warning {
+	color: #ff0000;
+}

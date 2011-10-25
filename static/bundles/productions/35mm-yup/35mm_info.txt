@@ -1,0 +1,36 @@
+           _ _._ __ _                              _ __ _._ _
+              |/(_///------------------------------\\\_)\|
+              |                                          |
+              |                                          |
+              :_______  .____     ._______ ___.     .____|_,
+           __\|_     /_\|_   \___\|_     //   |/____|      |
+          _)   /    /    /    /    /    /      _/   |      |
+          \_  /    /         /    /    /       \    _     _|
+           /_    _/__________\_________\________\___\_____\
+           --\___\---------------------------------------|--
+              |                                          |
+    ._______  :_______  .___     .__    __.       __.    :____    __.
+ ___\|_     /_\|_     /_\|_ /____\|__)__/ _|/_____(__|/__\|_   \_ / _|/______
+_)    /    /    /    /   _/    /       \__      /      (_  /    //  \_      /
+\_   /    /    /_____\   \     \_      | /     /        / /     \    /     /
+ /________\_______\_______\_____/______|_______\________\_\______\_________\
+- -diP-----------------------------------------------------------------aSL- -
+
+// 35mm by Youth Uprising
+   - Invitation to Icons 2012 by Segrel and Waffle
+   - Presented at the Alternative Party 2011
+   - For more info about Icons, visit: http://www.icons.fi/
+
+// Minimum Specs
+ . WebGL compliant browser and relatively fast computer
+ . Tested to (almost) run with 2GHz, lousy Intel internal GPU and Google Chrome
+
+// Greetings
+ . Everyone who have visited Icons
+ . Everyone who will visit   Icons
+ . Everyone who will participate to compos in Icons
+
+// Eof
+ . (C) 2011 Youth Uprising
+ . http://youth-uprising.com/
+ . http://www.icons.fi/
